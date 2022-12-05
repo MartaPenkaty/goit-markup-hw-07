@@ -572,9 +572,10 @@ footer {
 }
 /* ==== END FOOTER === */
 
-.first-btn {
-  width: 121px;
-  height: 38px;
+.buttons {
+
+  list-style-type: none;
+height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -583,66 +584,24 @@ footer {
   border: none;
   border-radius: 4px;
 }
-
-.second-btn {
-  width: 93px;
-  height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
+.buttons--first {
+ width: 121px;
 }
-
-.third-btn {
-  width: 114px;
-  height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
+.buttons--second {
+ width: 93px;
 }
-
-.fourth-btn {
+.buttons--third {
+width: 114px;
+}
+.buttons--fourth {
   width: 91px;
-  height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
 }
-
-.fifth-btn {
-  width: 121px;
-  height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
+.buttons--fifth {
+ width: 121px;
 }
-
-.first-btn:hover,
-.second-btn:hover,
-.third-btn:hover,
-.fourth-btn:hover,
-.fifth-btn:hover,
-.first-btn:focus,
-.second-btn:focus,
-.third-btn:focus,
-.fourth-btn:focus,
-.fifth-btn:focus {
-  color: var(--second-color);
+.buttons:hover,
+.buttons:focus {
+ color: var(--second-color);
   background: var(--main-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -650,8 +609,7 @@ footer {
   border-color: var(--main-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.container > .buttons-list {
+.container > .buttons {
   display: flex;
   gap: 8px;
   justify-content: center;
